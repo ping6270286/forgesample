@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>BIM模型web展示</title>
   <meta charset="utf-8" />
@@ -9,7 +10,7 @@
   <script src="js/libs/bootstrap.min.js"></script>
   <script src="js/libs/jstree.min.js"></script>
   <link rel="stylesheet" href="css/libs/bootstrap.min.css">
-  <link rel="stylesheet" href="css/libs/jstree.style.min.css"/>
+  <link rel="stylesheet" href="css/libs/jstree.style.min.css" />
   <!-- Autodesk Forge Viewer files -->
   <link rel="stylesheet" href="css/libs/autodesk.style.min.css" type="text/css">
   <script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/7.*/viewer3D.min.js"></script>
@@ -18,6 +19,7 @@
   <script src="js/ForgeTree.js"></script>
   <script src="js/ForgeViewer.js"></script>
 </head>
+
 <body>
   <!-- Fixed navbar by Bootstrap: https://getbootstrap.com/examples/navbar-fixed-top/ -->
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -35,7 +37,8 @@
           <div class="panel-heading" data-toggle="tooltip">
             Buckets &amp; Objects
             <span id="refreshBuckets" class="glyphicon glyphicon-refresh" style="cursor: pointer"></span>
-            <button class="btn btn-xs btn-info" style="float: right" id="showFormCreateBucket" data-toggle="modal" data-target="#createBucketModal">
+            <button class="btn btn-xs btn-info" style="float: right" id="showFormCreateBucket" data-toggle="modal"
+              data-target="#createBucketModal">
               <span class="glyphicon glyphicon-folder-close"></span> New bucket
             </button>
           </div>
@@ -63,7 +66,7 @@
           <h4 class="modal-title" id="myModalLabel">Create new bucket</h4>
         </div>
         <div class="modal-body">
-          <input type="text" id="newBucketKey" class="form-control"> For demonstration purposes, objects (files) are 
+          <input type="text" id="newBucketKey" class="form-control"> For demonstration purposes, objects (files) are
           NOT automatically translated. After you upload, right click on
           the object and select "Translate". Bucket keys must be of the form [-_.a-z0-9]{3,128}
         </div>
@@ -75,4 +78,5 @@
     </div>
   </div>
 </body>
+
 </html>
